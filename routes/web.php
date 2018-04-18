@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('export/twos', 'ExportController@twos');
+Route::get('export/sevens', 'ExportController@sevens');
+Route::get('export/others', 'ExportController@others');
