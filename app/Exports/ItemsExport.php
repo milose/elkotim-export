@@ -17,6 +17,7 @@ class ItemsExport implements FromCollection, WithHeadings, Responsable
 
     public function __construct($fileName = 'items.xlsx', $type = null)
     {
+        ini_set('max_execution_time', '300');
         $this->fileName = $fileName;
         $this->type = $type;
     }
